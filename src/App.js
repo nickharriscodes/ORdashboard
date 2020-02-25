@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CasesGraph from './components/CasesGraph';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const allData = require('./data/SDsampledata.json');
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className='cases-over-time'>
+        <CasesGraph allData={allData}/>
+        {/* <div>
+          <button onClick={() => getCasesPerDay(allData)}>
+            Click me
+          </button>
+        </div> */}
+      </div>
+    );
+  }
 }
-
-export default App;
