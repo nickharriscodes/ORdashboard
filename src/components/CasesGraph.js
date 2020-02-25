@@ -9,7 +9,6 @@ const CasesGraph = ({ allData }) => {
   }
   
   const getYAxis = () => {
-    console.log(allData)
     return Object.values(getCasesPerDay(allData));
   }
 

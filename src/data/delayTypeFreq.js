@@ -1,6 +1,4 @@
-const allData = require('./SDsampledata.json');
-
-function getDelayTypeFreq(arr) {
+export default function getDelayTypeFreq(arr) {
   
   let delayTypeFreq = {};
 
@@ -16,8 +14,6 @@ function getDelayTypeFreq(arr) {
       }
     }
   }
-  console.log(delayTypeFreq);
+  
   return delayTypeFreq;
 }
-
-getDelayTypeFreq(allData);
