@@ -7,13 +7,11 @@ const allData = require('./data/SDsampledata.json');
 export default class App extends React.Component {
   render() {
     return (
-      <div className='cases-over-time'>
-        <CasesGraph allData={allData}/>
-        {/* <div>
-          <button onClick={() => getCasesPerDay(allData)}>
-            Click me
-          </button>
-        </div> */}
+      <div>
+        <h1>OR Data Dashboard</h1>
+        <div className='cases-over-time'>
+          <CasesGraph allData={allData}/>
+        </div>
       </div>
     );
   }

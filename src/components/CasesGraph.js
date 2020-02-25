@@ -1,6 +1,6 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
-import getCasesPerDay from '../data/sortData';
+import getCasesPerDay from '../data/casesPerDay';
 
 const CasesGraph = ({ allData }) => {
   
