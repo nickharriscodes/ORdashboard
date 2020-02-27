@@ -3,6 +3,7 @@ import './App.css';
 import CasesGraph from './components/CasesGraph';
 import DelayTypeGraph from './components/DelayTypeGraph';
 import CaseDuration from './components/CaseDuration';
+import WeekdayTotals from './components/WeekdayTotals';
 
 const allData = require('./data/SDsampledata.json');
 
@@ -14,6 +15,9 @@ export default class App extends React.Component {
         <h1>OR Data Dashboard</h1>
         <div className='cases-over-time'>
           <CasesGraph allData={allData}/>
+        </div>
+        <div>
+          <WeekdayTotals allData={allData} />
         </div>
         <div className='delay-type-graph'>
           <DelayTypeGraph allData={allData}/>
