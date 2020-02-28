@@ -1,6 +1,7 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 import getWeekdayTotals from '../data/weekdayTotals';
+import CasesGraph from './CasesGraph'
 
 const WeekdayTotals = ({ allData }) => {
   
@@ -37,6 +38,9 @@ const WeekdayTotals = ({ allData }) => {
           }
         }}
       />
+      <div className='cases-over-time'>
+        <CasesGraph allData={allData}/>
+      </div>
     </div>
   );
 }
