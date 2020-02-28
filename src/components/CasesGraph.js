@@ -27,20 +27,25 @@ const CasesGraph = ({ allData }) => {
   
   return (
     <div className='cases-over-time'>
-      <Line
-        data={state}
-        options={{
-          title:{
-            display:true,
-            text:'Case Volume Over Time',
-            fontSize:20
-          },
-          legend:{
-            display:true,
-            position:'right'
-          }
-        }}
-      />
+      <h2 className='case-volume-header'>
+        Case Volume Over Time
+      </h2>
+      <div className="big-cases-line">
+        <Line
+          data={state}
+          options={{
+            title:{
+              display:true,
+              text:'',
+              fontSize:20
+            },
+            legend:{
+              display:true,
+              position:'right'
+            }
+          }}
+        />
+      </div>
     </div>
   );
 }

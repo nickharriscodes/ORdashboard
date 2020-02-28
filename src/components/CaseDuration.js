@@ -37,11 +37,11 @@ const CaseDuration = ({allData}) => {
       },
       {
         label: 'Median Case Duration (hrs)',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
+        backgroundColor: 'rgba(90,193,192,0.2)',
+        borderColor: 'rgba(90,193,192,1)',
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-        hoverBorderColor: 'rgba(255,99,132,1)',
+        hoverBackgroundColor: 'rgba(90,193,192,0.4)',
+        hoverBorderColor: 'rgba(90,193,192,1)',
         data: getMedianDuration(allData)
       }
     ]

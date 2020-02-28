@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import CasesGraph from './components/CasesGraph';
 import DelayTypeGraph from './components/DelayTypeGraph';
 import CaseDuration from './components/CaseDuration';
 import WeekdayTotals from './components/WeekdayTotals';
@@ -17,19 +16,21 @@ export default class App extends React.Component {
       <Router>
         <div className="App">
           <Navbar />
-          <Route exact path="/" component={Home} />
-          <Route 
-            exact path="/case-volume"
-            render={props => <WeekdayTotals {...props} allData={allData} />}
-          />
-          <Route 
-            exact path="/delays"
-            render={props => <DelayTypeGraph {...props} allData={allData} />}
-          />
-          <Route 
-            exact path="/case-duration"
-            render={props => <CaseDuration {...props} allData={allData} />}
-          />
+          <div className="container">
+            <Route exact path="/" component={Home} />
+            <Route 
+              exact path="/case-volume"
+              render={props => <WeekdayTotals {...props} allData={allData} />}
+            />
+            <Route 
+              exact path="/delays"
+              render={props => <DelayTypeGraph {...props} allData={allData} />}
+            />
+            <Route 
+              exact path="/case-duration"
+              render={props => <CaseDuration {...props} allData={allData} />}
+            />
+          </div>
         </div>
       </Router>
     );

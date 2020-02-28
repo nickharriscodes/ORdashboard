@@ -24,12 +24,15 @@ const WeekdayTotals = ({ allData }) => {
   
   return (
     <div className='cases-over-time'>
+      <h2>
+        Total Cases Per Weekday
+      </h2>
       <Line
         data={state}
         options={{
           title:{
             display:true,
-            text:'Total cases per weekday',
+            text:'',
             fontSize:20
           },
           legend:{

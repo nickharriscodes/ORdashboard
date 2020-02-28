@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
-.cases-over-time {
+.case-volume-header {
   margin-top: 100px;
+}
+
+.big-cases-line {
+  padding-bottom: 100px;
 }
